@@ -1,0 +1,238 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 20px; */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 2% 0;
+  border: 1px solid black;
+  max-height: 100%;
+  height: auto;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 20px;
+  background-color: rgba(81, 30, 201, 0);
+  box-shadow: inset 0 0 60px rgba(255, 254, 254, 0.237);
+  padding: 20px;
+  border: 1px solid rgba(51, 3, 3, 0.393);
+  
+}
+
+#card1 {
+  border: 1px solid black;
+  width: 200px;
+  height: 280px;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 20px -1px #f16529;
+  transition: transform 0.3s ease;
+}
+
+#card2 {
+  border: 1px solid black;
+  width: 200px;
+  height: 280px;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 3px #2965f1;
+  transition: transform 0.3s ease;
+}
+
+#card3 {
+  border: 1px solid black;
+  width: 200px;
+  height: 280px;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 20px -1px #f7df1e;
+  transition: transform 0.3s ease;
+}
+
+#card4 {
+  border: 1px solid black;
+  width: 200px;
+  height: 280px;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 3px #61dafb;
+  transition: transform 0.3s ease;
+}
+
+
+div h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 30px 15px;
+  text-shadow: red 0px 0px 10px, 
+               blue 0px 0px 10px, 
+               green 0px 0px 10px;
+}
+
+div p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  margin: 20px 20px;
+}
+
+.service-icon1 {
+  background-color: rgb(0, 0, 0);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 36%;
+  border-radius: 50%;
+  color: #f16529;
+  font-size: 45px;
+  /* box-shadow: inset 0 0 15px 0px rgb(14, 227, 46); */
+}
+.service-icon2 {
+  background-color: rgb(0, 0, 0);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 36%;
+  border-radius: 50%;
+  color: #2965f1;
+  font-size: 45px;
+  /* box-shadow: inset 0 0 15px 0px rgb(199, 227, 14); */
+}
+.service-icon3 {
+  background-color: rgb(0, 0, 0);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 36%;
+  border-radius: 50%;
+  color: #f7df1e;
+  font-size: 45px;
+  /* border: 1px solid rgb(212, 21, 21); */
+  /* box-shadow: inset 0 0 15px 0px rgb(227, 14, 14); */
+  /* text-shadow: 0px 0px 20px rgb(227, 14, 14); */
+}
+.service-icon4 {
+  background-color: rgb(0, 0, 0);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 36%;
+  border-radius: 50%;
+  color: #61dafb;
+  font-size: 45px;
+  /* box-shadow: inset 0 0 15px 0px rgb(32, 14, 227); */
+  /* text-shadow: 0px 0px 20px rgb(42, 22, 255);
+  border: 1px solid rgb(32, 14, 227); */
+}
+
+#card1:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px 7px rgb(255, 60, 60);
+}
+#card2:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px 15px rgb(5, 47, 255);
+}
+#card3:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px 7px rgb(183, 218, 9);
+}
+#card4:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px 12px #61dafb;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 36px;
+    gap: 40px;
+  }
+  
+  .card {
+    width: 180px;
+    height: 260px;
+    padding: 12px;
+  }
+  
+  div h3 {
+    font-size: 18px;
+    margin: 25px 10px;
+  }
+  
+  div p {
+    font-size: 14px;
+    margin: 15px 15px;
+  }
+  
+  div i {
+    font-size: 35px;
+  }
+  
+  .service-icon {
+    width: 50px;
+    height: 50px;
+    margin: 8px 36%;
+  }
+}
+
+/* Extra small devices (phones, 320px and up) */
+@media screen and (max-width: 480px) {
+  .card {
+    width: 160px;
+    height: 240px;
+  }
+  
+  div h3 {
+    font-size: 16px;
+  }
+  
+  div p {
+    font-size: 13px;
+  }
+  
+  div i {
+    font-size: 30px;
+  }
+  
+  .service-icon {
+    width: 45px;
+    height: 45px;
+    margin: 6px 36%;
+  }
+}
+
